@@ -47,8 +47,10 @@ module.exports = {
         })
     ],
     devServer: {
-        port:3005,
+        static:{ 
+            directory: path.join(__dirname, 'public'),
+        },
         compress: true,
-        allowedHosts: path.join(__dirname, 'dist'),
+        port:3005,
     }
-}
+};
