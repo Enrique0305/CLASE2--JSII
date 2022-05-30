@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles'
+import "../styles/global.scss";
+
 const App= ()=>{
     return (
         <h1>Hola mundo</h1>
