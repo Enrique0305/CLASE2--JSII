@@ -10,7 +10,14 @@ module.exports = {
         publicPath:'/'
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
+        alias: {
+			Components: path.resolve(__dirname, 'src/components/'),
+			Containers: path.resolve(__dirname, 'src/containers/'),
+			Styles: path.resolve(__dirname, 'src/styles/'),
+			Icons: path.resolve(__dirname, 'src/assets/icons/'),
+			Logos: path.resolve(__dirname, 'src/assets/logos/'),
+		}
     },
     mode:'development',
     module: {
@@ -36,6 +43,10 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                 ],
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                type: 'asset/resource',
             },
         ],
     },
