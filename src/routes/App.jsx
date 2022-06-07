@@ -17,17 +17,18 @@ const App = () => {
 	return (
 		<BrowserRouter>
 				<Routes>
-					<Route path='/' element={<Layout />}>
-						<Route index element={<Home/>} />
-						<Route path="login" element={<Login/>} />
-						<Route path="password-recovery" element={<PasswordRecovery/>} />
-						<Route path="send-email" element={<SendEmail/>} />
-						<Route path="new-password" element={<NewPassword/>} />
-						<Route path="account" element={<MyAccount/>} />
-						<Route path="signup" element={<CreateAccount/>} />
-						<Route path="checkout" element={<Checkout/>} />
-						<Route path="orders" element={<Orders/>} />
-						<Route path="*" element={<NotFound/>} />
+					<Route path='/' exact element={<Layout />}>
+						<Route index exact element={<Home/>} />
+						<Route path="login" exact element={<Login/>} />
+						<Route path="password-recovery" exact element={<PasswordRecovery/>} />
+						<Route path="send-email" exact element={<SendEmail/>} />
+						<Route path="new-password" exact element={<NewPassword/>} />
+						<Route path="account" exact element={<MyAccount/>} />
+						<Route path="signup" exact element={<CreateAccount/>} />
+						<Route path="checkout" exact element={<Checkout/>} />
+						<Route path="checkout" exact element={<Checkout/>} />
+						<Route path="orders" exact element={<Orders/>} />
+						<Route path="*" exact element={<NotFound/>} />
 					</Route>
 				</Routes>
 		</BrowserRouter>
