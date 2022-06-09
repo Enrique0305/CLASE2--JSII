@@ -19,6 +19,8 @@ module.exports = {
 			Icons: path.resolve(__dirname, 'src/assets/icons/'),
 			Logos: path.resolve(__dirname, 'src/assets/logos/'),
             Routes: path.resolve(__dirname, 'src/routes/'),
+            Hooks: path.resolve(__dirname,'src/hooks/'),
+            Context: path.resolve(__dirname,'src/context/'),
 		}
     },
     mode:'development',
